@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.shutterstock.com/shutterstock/videos/1105451835/thumb/11.jpg?ip=x480">
+    <link rel="stylesheet" href="to-doStyle.css">
+    <title>TO - DO LIST</title>
+</head>
+<body>
+    <div class="mdiv">
+    <div class="container">
+        <div class="todo-app">
+            <h1>TO-DO LIST</h1>
+            <img src="https://lordicon.com/icons/wired/gradient/47-to-do-list.gif" class="todo-icon"/> 
+            <!-- <img src="https://cdn.dribbble.com/users/4241563/screenshots/11874468/media/7796309c77cf752615a3f9062e6a3b3d.gif" class="todo-icon"> -->
+            <div class="feilds">
+                <form>
+                    <input type="text" id="task" autocomplete="off" autofocus>
+                    <button onclick="addTask()" type="button">Add Task</button>
+                </form>
+            </div>
+            <div class="my-tasks">
+                <ul class="task-list" type="none"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="to-doScript.js"></script>
+</body>
+</html>

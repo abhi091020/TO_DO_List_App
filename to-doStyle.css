@@ -1,0 +1,124 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial black;
+    font-size: 15px;
+}
+.mdiv
+{
+    height: 650px;
+    width: 100%;
+    background-image:
+    url("https://c4.wallpaperflare.com/wallpaper/129/137/167/low-poly-digital-art-abstract-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative ;
+}
+ .container
+{
+    width: 100%;
+    height: 100vh;
+    position: absolute; 
+    top: 0px;
+    display: flex;
+    justify-content: center;
+} 
+ .todo-app
+{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    margin-top: 80px;
+    padding: 30px;
+    border-radius: 30px;
+    position: relative;
+    
+}
+.todo-app h1
+{
+    color: rgb(243, 13, 13);
+    font-size: 25px;
+}
+.todo-icon
+{
+    position: absolute;
+    height: 70px;
+    top: 3px;
+    left: 200px;
+}
+.feilds
+{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(243, 199, 199);
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 20px;
+    position: relative;
+}
+.feilds input
+{
+    width: 70%;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+}
+.feilds button
+{
+    width: 28%;
+    font-size: 13px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(187, 36, 192);
+    cursor: pointer;
+}
+.task-list
+{
+    margin-top: 20px;
+}
+.task-list li
+{
+    padding: 10px 20px 2px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    position: relative;
+}
+.task-list li::before
+{
+        content: "";
+        background-image: url("https://e7.pngegg.com/pngimages/511/352/png-clipart-circle-circle-white-black-thumbnail.png");
+        height: 18px;
+        width: 18px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        position: absolute;
+        left: -6px;
+        top: 8px;     
+}
+.task-list li.checked {
+    color: grey;
+    text-decoration: line-through;
+  }
+  
+  .task-list li.checked::before {
+    background-image: url("https://png.pngtree.com/png-vector/20191113/ourmid/pngtree-green-check-mark-icon-flat-style-png-image_1986021.jpg");
+    height: 20px;
+    width: 20px;
+  }
+  span {
+    position: absolute;
+    right: 0px;
+  }
